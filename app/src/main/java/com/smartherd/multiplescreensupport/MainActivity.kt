@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 
-class MainActivity : AppCompatActivity(), MyCommunicator {
+class MainActivity : AppCompatActivity() {
 
 	private var mIsDualPane = false
 
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), MyCommunicator {
         mIsDualPane = fragmentBView?.visibility == View.VISIBLE
 	}
 
-	override fun displayDetails(title: String, description: String) {
+	/*override fun displayDetails(title: String, description: String) {
 
         if (mIsDualPane) { // If we are in Tablet
             val fragmentB = supportFragmentManager.findFragmentById(R.id.fragmentB) as FragmentB?
@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity(), MyCommunicator {
             intent.putExtra("title", title)
             intent.putExtra("description", description)
             startActivity(intent)
-        }
+        }*/
 	}
-}
+

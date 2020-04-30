@@ -24,8 +24,8 @@ class FragmentA: Fragment() {
 
         val recyclerView = rootView.findViewById(R.id.recycler_view) as RecyclerView
 
-        val adapter = RecyclerAdapter(context, DataProvider.data)
-        recyclerView.adapter = adapter
+        //val adapter = RecyclerAdapter(context, DataProvider.data)
+     //   recyclerView.adapter = adapter
 
         val manager = LinearLayoutManager(activity)
         manager.orientation = LinearLayoutManager.VERTICAL
